@@ -103,6 +103,9 @@ npx playwright show-report
   - add Page Object Model for better reusability
   - add CI pipeline execution and artifact publishing
   - add tagging/smoke regression grouping
+ 
+## Result
+<img width="897" height="479" alt="image" src="https://github.com/user-attachments/assets/1e6b1ccd-767a-4851-a576-b1966f7d741e" />
 
 ## Author
 
