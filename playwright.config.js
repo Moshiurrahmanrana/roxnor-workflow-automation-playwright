@@ -28,9 +28,10 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     baseURL: 'https://microsoft.yosuite.net/',
-    headless: false,       // set true for CI
+    headless: !!process.env.CI,
     screenshot: 'only-on-failure',
-    video: 'on',
+    trace: 'retain-on-failure',
+    video: 'retain-on-failure',
   },
 
   /* Configure projects for major browsers */

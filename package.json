@@ -2,7 +2,13 @@
   "name": "roxnor-automation",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test:e2e": "npx playwright test",
+    "test:e2e:headed": "npx playwright test --headed",
+    "test:e2e:debug-fail": "PAUSE_ON_FAILURE=1 npx playwright test --headed --workers=1",
+    "test:ci": "CI=true npx playwright test",
+    "report:e2e": "npx playwright show-report"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
